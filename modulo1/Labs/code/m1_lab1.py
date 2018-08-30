@@ -7,8 +7,7 @@ data: 04 de julho de 2018
 '''
 
 # importa a lib para obter as tabelas da Wikipedia
-from  lib.scrapy_table import Scrapy_Table
-
+from lib.scrapy_table import Scrapy_Table
 
 if __name__ == "__main__":
  
