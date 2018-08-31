@@ -8,4 +8,14 @@ municipios_table = site_connect_municipio.get_tables(0)
 
 print('exercicio 4')
 
-print(municipios_table[-1][2].encode('utf8'), "-", municipios_table[-1][3])
+menor = 0
+lista = []
+
+for mun in municipios_table[1:]:
+    if menor == 0:
+        menor = int(mun[-1])
+    else:
+        if int(mun[-1]) < menor:
+            lista = mun
+
+print(lista[2], ",", lista[3], "-", lista[-1], "habitantes")
